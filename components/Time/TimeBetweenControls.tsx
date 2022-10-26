@@ -7,7 +7,7 @@ import {IconClock} from "@tabler/icons"
 import { ManualTimeInput } from "./ManualTimeInput";
 
 //@ts-ignore
-export default function TimeControls({ value, onChange }) {
+export default function TimeBetweenControls({ value, onChange }) {
 
   const [time, setTime] = useState<[Date, Date, Number]>(value)
 

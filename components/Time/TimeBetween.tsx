@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Stack, Title } from '@mantine/core';
 
-import TimeControls from './TimeControls';
+import TimeControls from './TimeBetweenControls';
 import TimeOutput from './TimeOutput';
 import { Config } from './_Config';
 
@@ -21,8 +21,6 @@ export function TimeBetween() {
 	const defaultEnd = Config.dayjs("17:00", Config.timeFormat).toDate();
   
 	const [time, setTime] = useState<[Date, Date, Number]>([defaultStart, defaultEnd, 30])
-
-	
 
 	return (
 			<Stack>

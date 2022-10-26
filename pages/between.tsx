@@ -1,7 +1,7 @@
 import {TimeBetween} from '../components/Time/TimeBetween'
 
 
-export default function HomePage() {
+export default function TimeBetweenPage() {
   return (
     <>
       <TimeBetween />

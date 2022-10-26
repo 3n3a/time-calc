@@ -9,7 +9,8 @@ import {
   Burger,
   useMantineTheme,
   Title,
-  Group
+  Group,
+  Space
 } from '@mantine/core';
 import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 import {MenuItem} from '../MenuItem/MenuItem'
@@ -29,8 +30,10 @@ export function MainAppShell({children}) {
       navbarOffsetBreakpoint="sm"
       asideOffsetBreakpoint="sm"
       navbar={
-        <Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 300 }}>
+        <Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 300 }} >
           <MenuItem name='Time Between' link='/between' />
+          <Space h="md" />
+          <MenuItem name='Time Hours' link='/hours' />
         </Navbar>
       }
       footer={
