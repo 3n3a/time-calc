@@ -10,7 +10,8 @@ import {
   useMantineTheme,
   Title,
   Group,
-  Space
+  Space,
+  Image
 } from '@mantine/core';
 import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 import {MenuItem} from '../MenuItem/MenuItem'
@@ -54,9 +55,7 @@ export function MainAppShell({children}) {
               />
             </MediaQuery>
 
-            <Title order={1}>
-              Time Utility
-            </Title>
+            <Image height={50} width={191} src={'/logo.svg'} />
 
             <ColorSchemeToggle></ColorSchemeToggle>
 
